@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untukmu, Sayang</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+            background-color: #c1c1c1;
+            color: #571616;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #8bb7f1ef;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            animation: bounce 2s infinite;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #e5e6eb;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #2ecc71;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        button:hover {
+            background-color: #27ae60;
+        }
+        .animation {
+            display: none;
+            margin-top: 20px;
+        }
+        .flower {
+        
+            width: 100px;
+            animation: float 3s infinite;
+        }
+        .sad {
+            font-size: 50px;
+            animation: shake 1s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        @keyframes shake {
+            0%, 100% {
+                transform: translateX(0);
+            }
+            25% {
+                transform: translateX(-10px);
+            }
+            75% {
+                transform: translateX(10px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Untukmu, Cinta Sejatiku</h1>
+        <h1>indah ayu putri daeli</h1>
+    </header>
+    <main>
+        <p>Aku punya pertanyaan untukmu...</p>
+        <div>
+            <p style="font-size: 1.2em;">Kamu sayang aku apa enggak?</p>
+            <button onclick="sayang()">Sayang ❤️</button>
+            <button onclick="enggak()">Enggak 😢</button>
+        </div>
+        <div id="flower-animation" class="animation">
+            <img class="flower" src="WhatsApp Image 2025-04-30 at 03.51.28_d03eac5b.jpg" alt="">
+            <p>Cantik sekali sayangku ini! 🌸</p>
+        </div>
+        <div id="sad-animation" class="animation">
+            <p class="sad">😭</p>
+            <p> Mau Ku Tampar?? 😢</p>
+        </div>
+        
+    </main>
+    <footer>
+        <p>&copy; Dari sayang mu seven wkwk</p>
+    </footer>
+
+    <script>
+        
+        function sayang() {
+            document.getElementById('flower-animation').style.display = 'block';
+            document.getElementById('sad-animation').style.display = 'none';
+        }
+
+        function enggak() {
+            document.getElementById('sad-animation').style.display = 'block';
+            document.getElementById('flower-animation').style.display = 'none';
+        }
+    </script>
+    <syle.css></syle.css>
+    <main.java></main.java>
+</body>
+</html>
